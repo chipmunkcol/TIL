@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "유연근무제.js",
   "scripts": {
-    "start": "node 유연근무제.js",
+    "start": "node 가장많이받은선물.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
