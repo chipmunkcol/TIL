@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "유연근무제.js",
   "scripts": {
-    "start": "node 성격유형검사.js",
+    "start": "node 신고결과받기.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
