@@ -16,16 +16,17 @@ function solution(s) {
 
   let numbers = "";
   for (const letter of s) {
+    // Number인 경우 결과값에 합친다
     if (!isNaN(Number(letter))) {
       result += letter;
-    } else {
-      //하나씩 스펠링을 합쳐서 스펠링이 완성될때 return
-      if (!NUMBER_ENG.hasOwnProperty(numbers)) {
-        numbers += letter;
-        if (NUMBER_ENG.hasOwnProperty(numbers)) {
-          result += String(NUMBER_ENG[numbers]);
-          numbers = "";
-        }
+    }
+
+    if (isNaN(Number(letter))) {
+      //하나씩 스펠링을 합쳐서 스펠링이 완성될때 결과값에 합친다
+      numbers += letter;
+      if (NUMBER_ENG.hasOwnProperty(numbers)) {
+        result += String(NUMBER_ENG[numbers]);
+        numbers = "";
       }
     }
   }
